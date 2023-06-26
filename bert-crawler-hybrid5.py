@@ -32,7 +32,7 @@ async def crawl_and_process(session, url):
     await asyncio.sleep(1)
 
     try:
-        print("Async fetch:" + url)
+        print("Async fetch: " + url)
         # Specify a timeout of 10 seconds for the request
         async with async_timeout.timeout(10):
             async with session.get(url) as response:
@@ -45,7 +45,7 @@ async def crawl_and_process(session, url):
         tokens = tokens.to(device)
 
         # Predict all tokens
-        print("Predicting tokens" + url)
+        print("Predicting tokens: " + url)
         with torch.no_grad():
             predictions = model(tokens['input_ids'])
 

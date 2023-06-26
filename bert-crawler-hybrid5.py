@@ -28,24 +28,22 @@ labels = ['O', 'B-MISC', 'I-MISC', 'B-PER', 'I-PER', 'B-ORG', 'I-ORG', 'B-LOC', 
 async def crawl_and_process(session, url):
     word_labels = []
     
-    # Sleep for a certain duration before making a request
-    await asyncio.sleep(1)
-
     try:
-        print("Async fetch: " + url)
+        print("Async fetch:" + url)
         # Specify a timeout of 10 seconds for the request
         async with async_timeout.timeout(10):
             async with session.get(url) as response:
                 response.raise_for_status()
                 soup = BeautifulSoup(await response.text(), 'html.parser')
                 text = soup.get_text()
-
+        #Sleep for 1 second
+        await asyncio.sleep(1)
         # Tokenize the text and move to GPU
         tokens = tokenizer(text, return_tensors='pt', truncation=True, padding='max_length', max_length=128)
         tokens = tokens.to(device)
 
         # Predict all tokens
-        print("Predicting tokens: " + url)
+        print("Predicting tokens" + url)
         with torch.no_grad():
             predictions = model(tokens['input_ids'])
 

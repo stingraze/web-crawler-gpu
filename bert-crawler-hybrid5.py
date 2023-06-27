@@ -27,6 +27,8 @@ labels = ['O', 'B-MISC', 'I-MISC', 'B-PER', 'I-PER', 'B-ORG', 'I-ORG', 'B-LOC', 
 # Function to fetch webpage and process text
 async def crawl_and_process(session, url):
     word_labels = []
+    #Sleep for 1 second
+    await asyncio.sleep(1)
     
     try:
         print("Async fetch:" + url)
@@ -36,8 +38,6 @@ async def crawl_and_process(session, url):
                 response.raise_for_status()
                 soup = BeautifulSoup(await response.text(), 'html.parser')
                 text = soup.get_text()
-        #Sleep for 1 second
-        await asyncio.sleep(1)
         # Tokenize the text and move to GPU
         tokens = tokenizer(text, return_tensors='pt', truncation=True, padding='max_length', max_length=128)
         tokens = tokens.to(device)

@@ -1,3 +1,5 @@
+#(C)Tsubasa Kato 2023 
+# Created with the help of ChatGPT
 import requests
 from bs4 import BeautifulSoup
 from transformers import BertTokenizer, BertForTokenClassification

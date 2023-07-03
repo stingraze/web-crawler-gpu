@@ -7,5 +7,7 @@ It crawls the sites asynchronously and gathers the essential tokens (keywords) a
 Tested to work on Ubuntu 20.04 with NVIDIA's CUDA 11.4 + GeForce RTX 2080Ti.
 Created mostly with the help of ChatGPT (GPT-4) but with several hours of work in improving and taking bugs out.
 
+gpu-crawler-recursive7.py is the recursive version of the web-crawler-gpu.
+
 (C)Tsubasa Kato 2023 - Inspire Search Corporation
 https://www.inspiresearch.io/en

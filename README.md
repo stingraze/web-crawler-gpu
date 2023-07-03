@@ -1,5 +1,5 @@
 # web-crawler-gpu
-Experimentally Web Crawler using GPU (CUDA + PyTorch + BERT)
+Experimentary Web Crawler using GPU (CUDA + PyTorch + BERT)
 
 This project is still in alpha stage.
 It crawls the sites asynchronously and gathers the essential tokens (keywords) and stores it in JSON array into a CSV.

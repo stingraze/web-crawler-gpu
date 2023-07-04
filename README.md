@@ -13,5 +13,9 @@ bert-crawler-hybrid5.py follows only the links listed in ursl.txt
 
 gpu-crawler-recursive7.py is the recursive version of the web-crawler-gpu and starts from URLs in seeds.txt.
 
+
+[![gpu-crawler-recursive7.py running on M1 Pro:](https://img.youtube.com/vi/86yhWTWNWJM/0.jpg)](https://www.youtube.com/watch?v=86yhWTWNWJM)
+
+
 (C)Tsubasa Kato 2023 - Inspire Search Corporation
 https://www.inspiresearch.io/en

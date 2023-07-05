@@ -15,6 +15,8 @@ gpu-crawler-recursive7.py is the recursive version of the web-crawler-gpu and st
 
 gpu-crawler-recursive7.py running on NVIDIA GeForce RTX 2080Ti with 64GB of DDR4 RAM.
 [![gpu-crawler-recursive7.py running on NVIDIA GeForce RTX 2080Ti:](https://img.youtube.com/vi/-9NsB_3lpRI/0.jpg)](https://www.youtube.com/watch?v=-9NsB_3lpRI)
+
+
 gpu-crawler-recursive7.py running on M1 Pro: (NVIDIA CUDA Demo video coming soon!)
 [![gpu-crawler-recursive7.py running on M1 Pro:](https://img.youtube.com/vi/86yhWTWNWJM/0.jpg)](https://www.youtube.com/watch?v=86yhWTWNWJM)
 

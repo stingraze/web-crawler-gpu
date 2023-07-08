@@ -1,5 +1,6 @@
 # web-crawler-gpu
 Experimentary Web Crawler using GPU (CUDA + PyTorch + BERT)
+Updated on 7/8/2023 22:23PM 
 
 This project is still in alpha stage.
 It crawls the sites asynchronously and gathers the essential tokens (keywords) and stores it in JSON array into a CSV.
@@ -12,6 +13,8 @@ Created mostly with the help of ChatGPT (GPT-4) but with several hours of work i
 bert-crawler-hybrid5.py follows only the links listed in ursl.txt
 
 gpu-crawler-recursive7.py is the recursive version of the web-crawler-gpu and starts from URLs in seeds.txt.
+
+gpu-crawler-recursive11.py is the latest recursive version, it needs more testing.
 
 gpu-crawler-recursive7.py running on NVIDIA GeForce RTX 2080Ti with 64GB of DDR4 RAM.
 [![gpu-crawler-recursive7.py running on NVIDIA GeForce RTX 2080Ti:](https://img.youtube.com/vi/-9NsB_3lpRI/0.jpg)](https://www.youtube.com/watch?v=-9NsB_3lpRI)

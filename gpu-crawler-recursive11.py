@@ -21,7 +21,7 @@ concurrency_limit = 10  # Number of concurrent requests
 
 # URL exclusion list using regular expressions
 exclusion_list = [
-    r'^https?://example\.com/excluded\d+$',
+    r'^https://en\.wikipedia\.org',
     # Add more regular expressions for URLs to exclude
 ]
 
@@ -35,10 +35,10 @@ async def crawl_and_process(session, url, depth=0):
     try:
         # Pause for 1 second
         await asyncio.sleep(1)
-        print("Async fetch: " + url)
+        print("Async fetch:" + url)
 
         # Check if the URL matches any regex pattern in the exclusion list
-        if any(re.match(pattern, url) for pattern in exclusion_list):
+        if any(re.search(pattern, url) for pattern in exclusion_list):
             print(f"URL {url} matches exclusion pattern. Skipping.")
             return
 

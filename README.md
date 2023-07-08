@@ -14,7 +14,7 @@ bert-crawler-hybrid5.py follows only the links listed in ursl.txt
 
 gpu-crawler-recursive7.py is the recursive version of the web-crawler-gpu and starts from URLs in seeds.txt.
 
-gpu-crawler-recursive11.py is the latest recursive version, it needs more testing.
+gpu-crawler-recursive11.py is the latest recursive version with async fetch timeout and URL exclusion. It needs more testing.
 
 gpu-crawler-recursive7.py running on NVIDIA GeForce RTX 2080Ti with 64GB of DDR4 RAM.
 [![gpu-crawler-recursive7.py running on NVIDIA GeForce RTX 2080Ti:](https://img.youtube.com/vi/-9NsB_3lpRI/0.jpg)](https://www.youtube.com/watch?v=-9NsB_3lpRI)

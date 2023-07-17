@@ -1,6 +1,6 @@
 #(C)Tsubasa Kato - Inspire Search Corporation 2023 7/17/2023 11:16AM JST
 #Created with the help of Google Bard and ChatGPT (GPT-4)
-#This crawls the web and gets the embeddings of the contents of each site. Still experimental.
+#This crawls the web and gets the BERT embeddings of the contents of each site. Still experimental.
 import urllib.request
 import torch
 import time

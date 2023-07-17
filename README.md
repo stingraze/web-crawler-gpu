@@ -1,5 +1,5 @@
 # web-crawler-gpu
-Experimentary Web Crawler using GPU (CUDA + PyTorch + BERT)
+Experimental Web Crawler using GPU (CUDA + PyTorch + BERT)
 Updated on 7/8/2023 22:23PM 
 
 This project is still in alpha stage.

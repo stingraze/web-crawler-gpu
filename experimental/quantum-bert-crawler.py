@@ -1,4 +1,5 @@
 #(C)Tsubasa Kato - Inspire Search Corporation 2023 7/17/2023 17:31PM JST
+#Updated on 7/18/2023 8:15AM
 #Created with the help of Google Bard and ChatGPT (GPT-4)
 #This crawls the web and gets the BERT embeddings of the contents of each site after quantum entanglement and measurement. It will also decide how to follow link after measurement.
 #Still experimental. Needs more thorough debugging.
@@ -6,6 +7,7 @@ import torch
 import time
 from bs4 import BeautifulSoup
 from transformers import BertModel, BertTokenizer
+import urllib.request #Needed this to run correctly.
 from urllib.parse import urljoin
 from qiskit import QuantumCircuit, transpile, assemble, Aer, execute
 from random import randint

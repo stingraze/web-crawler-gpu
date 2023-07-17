@@ -17,6 +17,9 @@ gpu-crawler-recursive7.py is the recursive version of the web-crawler-gpu and st
 gpu-crawler-recursive11.py is the latest recursive version with async fetch timeout and URL exclusion. It needs more testing.
 
 gpu-crawler-recursive7.py running on NVIDIA GeForce RTX 2080Ti with 64GB of DDR4 RAM.
+
+New: 7/17/2023: I added a experimental folder with crawler-bert-embeddings.py inside. This outputs embeddings of each URLs crawled. Still experimental and needs code revision to be useful, but a reference for future use.
+
 [![gpu-crawler-recursive7.py running on NVIDIA GeForce RTX 2080Ti:](https://img.youtube.com/vi/-9NsB_3lpRI/0.jpg)](https://www.youtube.com/watch?v=-9NsB_3lpRI)
 
 

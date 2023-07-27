@@ -97,7 +97,6 @@ async def crawl_and_process(session, url, depth=0):
                         if(len(results) > 5):
                             print("Results so far: (Latest 5)")
                             print(results[-5:])
-                            print(results)
                         await crawl_and_process(session, new_url, depth + 1)  # Recursive call
 
     except asyncio.TimeoutError:
@@ -110,7 +109,9 @@ async def crawl_and_process(session, url, depth=0):
         if(len(results) > 5):
             print("Results so far: (Latest 5)")
             print(results[-5:])
-            print(results)
+            
+            
+
 
 # Create a function to run the asyncio event loop
 async def main(seed_urls):

@@ -14,13 +14,15 @@ bert-crawler-hybrid5.py follows only the links listed in ursl.txt
 
 gpu-crawler-recursive7.py is the recursive version of the web-crawler-gpu and starts from URLs in seeds.txt.
 
-gpu-crawler-recursive11.py is the latest recursive version with async fetch timeout and URL exclusion. It needs more testing.
+gpu-crawler-recursive12.py is the latest version with some debugging information added to gpu-crawler-recursive11.py.
 
-gpu-crawler-recursive7.py running on NVIDIA GeForce RTX 2080Ti with 64GB of DDR4 RAM.
+
 
 New: 7/17/2023: I added a experimental folder with crawler-bert-embeddings.py inside. This outputs embeddings of each URLs crawled. Still experimental and needs code revision to be useful, but a reference for future use.
 
 Update: 7/17/2023 17:33PM I added a experimental web crawler that outputs BERT embeddings using a very simple quantum algorithm using quantum entanglement. Tested to work on quantum simulator. The file name is: quantum-bert-crawler.py
+
+gpu-crawler-recursive7.py running on NVIDIA GeForce RTX 2080Ti with 64GB of DDR4 RAM.
 
 [![gpu-crawler-recursive7.py running on NVIDIA GeForce RTX 2080Ti:](https://img.youtube.com/vi/-9NsB_3lpRI/0.jpg)](https://www.youtube.com/watch?v=-9NsB_3lpRI)
 

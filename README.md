@@ -10,7 +10,7 @@ Also tested to work on Macbook Pro with M1 Pro.
 
 Created mostly with the help of ChatGPT (GPT-4) but with several hours of work in improving and taking bugs out.
 
-bert-crawler-hybrid5.py follows only the links listed in ursl.txt
+bert-crawler-hybrid5.py follows only the links listed in urls.txt
 
 gpu-crawler-recursive7.py is the recursive version of the web-crawler-gpu and starts from URLs in seeds.txt.
 
